@@ -18,7 +18,8 @@
 
             foreach (var animal in sortedAnimals)
             {
-                Console.WriteLine("{0} {1} {2} {3}", animal.GetType().Name, animal.Name, animal.Age, animal.Sex);
+                Console.Write("{0} {1} {2} {3} ", animal.GetType().Name, animal.Name, animal.Age, animal.Sex);
+                animal.MakeSound();
             }
 
             Console.WriteLine("Average age: " + animals.AverageAge());

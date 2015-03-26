@@ -11,7 +11,7 @@
 
         public override void MakeSound()
         {
-            Console.WriteLine();
+            Console.WriteLine("KRIA KRIA");
         }
     }
 }
