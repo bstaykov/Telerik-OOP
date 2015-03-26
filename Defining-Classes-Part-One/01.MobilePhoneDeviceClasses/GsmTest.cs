@@ -31,6 +31,7 @@
             {
                 Console.WriteLine(string.Format("DateTime: {0}\nDialed number: {1}\nDuration: {2}\n", call.DateTimeOfCall, call.DialedNumber, call.Duration));
             }
+
             double callPricePerMinute = 0.37;
             double callsTotalPrice = GSM.IPhone4S.CalculateCallsPrice(callPricePerMinute);
             Console.WriteLine("Total price: {0:C}", callsTotalPrice);
@@ -40,6 +41,7 @@
             {
                 Console.WriteLine(string.Format("DateTime: {0}\nDialed number: {1}\nDuration: {2}\n", call.DateTimeOfCall, call.DialedNumber, call.Duration));
             }
+
             double callsTotalPriceAfterRemove = GSM.IPhone4S.CalculateCallsPrice(callPricePerMinute);
             Console.WriteLine("Total price: {0:C}", callsTotalPriceAfterRemove);
         }
