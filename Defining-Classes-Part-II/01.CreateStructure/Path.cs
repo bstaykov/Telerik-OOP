@@ -6,8 +6,8 @@
     public class Path
     {
         public Path()
+            : this(new List<Point3D>())
         {
-            this.Points = new List<Point3D>();
         }
 
         public Path(List<Point3D> points)

@@ -8,7 +8,6 @@
     {
         // 05. Using the extension methods OrderBy() and ThenBy() with lambda expressions sort the students 
         //  by first name and last name in descending order. Rewrite the same with LINQ.
-
         public static void PrintSortedStudentsUsingLambda(Student[] arr)
         {
             Console.WriteLine("Sorted by FirstName and Last Name Lambda : ");

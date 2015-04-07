@@ -20,7 +20,6 @@
             // sort strings by length in descending order and then get the first one.
             // var stringWithMaximalLength = stringSequence.OrderByDescending(x => x.Length).First();
             // Console.WriteLine("Max length: " + stringWithMaximalLength);
-
             var maxLen = stringSequence.Max(x => x.Length);
             Console.WriteLine("Max length: " + maxLen);
 

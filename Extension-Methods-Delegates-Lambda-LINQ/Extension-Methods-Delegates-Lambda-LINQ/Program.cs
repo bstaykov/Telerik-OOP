@@ -23,6 +23,7 @@
             Console.WriteLine(sb.ToString());
             sb = strB.Substring(0, 10);
             Console.WriteLine(sb.ToString());
+
             // sb = strB.Substring(0, 11); // exception
             // Console.WriteLine(sb.ToString());
             sb = strB.Substring(1, 0);

@@ -7,7 +7,6 @@
     {
         // 02. Implement a set of extension methods for IEnumerable<T> that implement the following group functions: 
         //     sum, product, min, max, average.
-
         public static T Sum<T>(this IEnumerable<T> list)
         {
             dynamic sum = 0;

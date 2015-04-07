@@ -2,6 +2,9 @@
 {
     public enum BatteryType
     {
-        LiIon, NiMH, NiCd, UNKNOWN
+        LiIon, 
+        NiMH, 
+        NiCd, 
+        UNKNOWN,
     }
 }

@@ -4,7 +4,6 @@
     using System.Threading;
 
     // 08. * Read in MSDN about the keyword event in C# and how to publish events. Re-implement the above using .NET events and following the best practices.
-
     public class MessageEventArgs : EventArgs
     {
         private string message;
@@ -66,7 +65,7 @@
 
         public void RepeatMessage(int stepInSeconds, long durationInSeconds)
         {
-            MessageEventArgs messageEventArgs = new MessageEventArgs("Messege");
+            MessageEventArgs messageEventArgs = new MessageEventArgs("Message");
 
             EventHandler<MessageEventArgs> handler = this.RaiseMessageEvent;
 

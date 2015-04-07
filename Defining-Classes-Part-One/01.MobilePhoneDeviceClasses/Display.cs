@@ -7,16 +7,15 @@
         private int size;
         private int numberOfColors;
 
+        public Display()
+            : this(0, 0)
+        {
+        }
+
         public Display(int displaySize, int numberOfColors)
         {
             this.Size = displaySize;
             this.NumberOfColors = numberOfColors;
-        }
-
-        public Display()
-        {
-            this.Size = 0;
-            this.NumberOfColors = 0;
         }
 
         public int Size 

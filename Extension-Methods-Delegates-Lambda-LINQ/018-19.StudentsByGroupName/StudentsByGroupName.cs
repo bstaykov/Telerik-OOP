@@ -35,10 +35,10 @@
                     Console.WriteLine("{0} {1}", student.FirstName, student.LastName);
                 }
             }
+
             Console.WriteLine();
             
             // 19. Rewrite the previous using extension methods.
-
             Console.WriteLine("Order using extension methods: ");
 
             var groupedStudents = students.GroupBy(student => student.Group.DepartmentName);

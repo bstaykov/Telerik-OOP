@@ -64,7 +64,6 @@
 
             // studentsWithSofiaPhoneNumbersLambda = students.Where(st => st.Tel.StartsWith("02"));
             // Print(studentsWithSofiaPhoneNumbersLambda);
-
             Console.WriteLine("---12---");
             Print(studentsWithSofiaPhoneNumbers);
         }
@@ -84,7 +83,6 @@
             // {
             // Console.WriteLine("{0} -> {1}", student.FullName, student.Marks);
             // }
-
             Console.WriteLine("---13---");
             foreach (var student in studentsWithExcellentMark)
             {

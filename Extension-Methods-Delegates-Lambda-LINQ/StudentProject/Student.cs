@@ -6,7 +6,6 @@
 
     // 09.Create a class student with properties FirstName, LastName, FN, Tel, Email, Marks (a List<int>), GroupNumber.
     // Create a List<Student> with sample students. Select only the students that are from group number 2. Use LINQ query. Order the students by FirstName.
-
     public class Student
     {
         private string firstName;

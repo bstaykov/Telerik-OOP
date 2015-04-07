@@ -58,11 +58,24 @@
                     string propertyValue = values[1];
 
                     var property = profileType.GetProperty(propertieName);
-                    property.SetValue(profile, propertyValue);
+                    object convert = Convert.ChangeType(propertyValue, property.PropertyType);
+                    property.SetValue(profile, convert);
 
+                    // int propertyValueInt;
+                    // DateTime peopertyValueDate;
+                    // if (int.TryParse(propertyValue, out propertyValueInt))
+                    // {
+                    // property.SetValue(profile, propertyValueInt);
+                    // }
+                    // else if (DateTime.TryParse(propertyValue, out peopertyValueDate))
+                    // {
+                    // property.SetValue(profile, peopertyValueDate);
+                    // }
+                    // else
+                    // {
+                    // property.SetValue(profile, propertyValue);
+                    // }
                     currentData = reader.ReadLine();
-
-                    // object convert = Convert.ChangeType(propertyValue, typeof(int));
                     Console.WriteLine(propertieName + " " + propertyValue);
                 }
             }

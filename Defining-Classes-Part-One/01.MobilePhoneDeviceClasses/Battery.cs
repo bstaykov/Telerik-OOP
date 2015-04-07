@@ -9,20 +9,17 @@
         private int hoursTalk;
         private BatteryType type;
 
+        public Battery() 
+            : this(null, 0, 0, BatteryType.UNKNOWN)
+        {
+        }
+
         public Battery(string model, int hoursIdle, int hoursTalk, BatteryType type)
         {
             this.Model = model;
             this.HoursIdle = hoursIdle;
             this.HoursTalk = hoursTalk;
             this.Type = type;
-        }
-
-        public Battery()
-        {
-            this.Model = null;
-            this.HoursIdle = 0;
-            this.HoursTalk = 0;
-            this.Type = BatteryType.UNKNOWN;
         }
 
         public string Model

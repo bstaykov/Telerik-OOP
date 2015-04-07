@@ -9,8 +9,8 @@
         private const int DefaultSize = 8;
 
         public Matrix()
+            : this(DefaultSize, DefaultSize)
         {
-            this.MatrixArray = new T[DefaultSize, DefaultSize];
         }
 
         public Matrix(int row, int col)
@@ -28,10 +28,9 @@
         }
 
         public Matrix(T[,] matrix)
+            : this(matrix.GetLength(0), matrix.GetLength(1))
         {
             this.MatrixArray = matrix;
-            this.Row = matrix.GetLength(0);
-            this.Col = matrix.GetLength(1);
         }
 
         public T[,] MatrixArray { get; set; }
@@ -172,14 +171,14 @@
             {
                 for (int j = 0; j < matrix.Col; j++)
                 {
-                    if ((dynamic)matrix[i, j] != zero)
+                    if ((dynamic)matrix[i, j] == zero)
                     {
-                        return false;
+                        return true;
                     }
                 }
             }
 
-            return true;
+            return false;
         }
 
         public override string ToString()

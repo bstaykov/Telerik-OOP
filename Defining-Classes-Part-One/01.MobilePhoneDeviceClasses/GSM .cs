@@ -34,13 +34,8 @@
         }
 
         public GSM()
+            : this(DefaultModel, DefaultManufacturer, 0, null, null, null)
         {
-            this.Model = DefaultModel;
-            this.Manufacturer = DefaultManufacturer;
-            this.Price = 0;
-            this.Owner = null;
-            this.BatteryInfo = null;
-            this.DisplayInfo = null;
             this.CallHistory = new List<Call>();
         }
 

@@ -7,7 +7,6 @@
     {
         // 06. Write a program that prints from given array of integers all numbers that are divisible by 7 and 3. 
         // Use the built-in extension methods and lambda expressions. Rewrite the same with LINQ.
-
         public static void PrintNumberDivisibleByUseLambda(int[] numbers, int firstDivider, int secondDivider)
         {
             int[] divisibleNumbers = Array.FindAll(numbers, num => num % firstDivider == 0 && num % secondDivider == 0);
